@@ -1,0 +1,933 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+  <display-name>lab</display-name>
+  
+  
+  <servlet>
+    <servlet-name>RemindServlet</servlet-name>
+    <servlet-class>servlet.RemindServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UpdateRemindServlet</servlet-name>
+    <servlet-class>servlet.UpdateRemindServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ShowRemindServlet</servlet-name>
+    <servlet-class>servlet.ShowRemindServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ShowLabServlet</servlet-name>
+    <servlet-class>servlet.ShowLabServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UpdateLabServlet</servlet-name>
+    <servlet-class>servlet.UpdateLabServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AlterLabServlet</servlet-name>
+    <servlet-class>servlet.AlterLabServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>LabServlet</servlet-name>
+    <servlet-class>servlet.LabServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DeleteLabServlet</servlet-name>
+    <servlet-class>servlet.DeleteLabServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AlterRemindServlet</servlet-name>
+    <servlet-class>servlet.AlterRemindServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ApplyLabServletOne</servlet-name>
+    <servlet-class>servlet.ApplyLabServletOne</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ShowTeaLabServlet</servlet-name>
+    <servlet-class>servlet.ShowTeaLabServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ApplyLabServletTwo</servlet-name>
+    <servlet-class>servlet.ApplyLabServletTwo</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>RegisterServlet</servlet-name>
+    <servlet-class>servlet.RegisterServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>servlet.LoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ResetPasswordServlet</servlet-name>
+    <servlet-class>servlet.ResetPasswordServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ShowAdministratorServlet</servlet-name>
+    <servlet-class>servlet.ShowAdministratorServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ShowTeacherServlet</servlet-name>
+    <servlet-class>servlet.ShowTeacherServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ShowManageServlet</servlet-name>
+    <servlet-class>servlet.ShowManageServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ShowLeaderServlet</servlet-name>
+    <servlet-class>servlet.ShowLeaderServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ShowTeachersLServlet</servlet-name>
+    <servlet-class>servlet.ShowTeachersLServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ShowManagesLServlet</servlet-name>
+    <servlet-class>servlet.ShowManagesLServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ShowUserServlet</servlet-name>
+    <servlet-class>servlet.ShowUserServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AlterAdministratorButtonServlet</servlet-name>
+    <servlet-class>servlet.AlterAdministratorButtonServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AlterAdministratorServlet</servlet-name>
+    <servlet-class>servlet.AlterAdministratorServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>TeacherCancelApplyServlet</servlet-name>
+    <servlet-class>servlet.TeacherCancelApplyServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AlterTeacherButtonServlet</servlet-name>
+    <servlet-class>servlet.AlterTeacherButtonServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AlterTeacherServlet</servlet-name>
+    <servlet-class>servlet.AlterTeacherServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AlterManagerServlet</servlet-name>
+    <servlet-class>servlet.AlterManagerServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AlterLeaderButtonServlet</servlet-name>
+    <servlet-class>servlet.AlterLeaderButtonServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AlterManagerButtonServlet</servlet-name>
+    <servlet-class>servlet.AlterManagerButtonServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AlterLeaderServlet</servlet-name>
+    <servlet-class>servlet.AlterLeaderServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>VerifyApplyServlet</servlet-name>
+    <servlet-class>servlet.VerifyApplyServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ToVerifyServlet</servlet-name>
+    <servlet-class>servlet.ToVerifyServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>VerifyResultServlet</servlet-name>
+    <servlet-class>servlet.VerifyResultServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>MonitorServlet</servlet-name>
+    <servlet-class>servlet.MonitorServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ToNoteServlet</servlet-name>
+    <servlet-class>servlet.ToNoteServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ShowNoteSutiation</servlet-name>
+    <servlet-class>servlet.ShowNoteSutiation</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>NoteResultServlet</servlet-name>
+    <servlet-class>servlet.NoteResultServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>TeaNoteSituationServlet</servlet-name>
+    <servlet-class>servlet.TeaNoteSituationServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ShowTeaFinishLabServlet</servlet-name>
+    <servlet-class>servlet.ShowTeaFinishLabServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ToCommentServlet</servlet-name>
+    <servlet-class>servlet.ToCommentServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>CommentLabServlet</servlet-name>
+    <servlet-class>servlet.CommentLabServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ToSendCompensationServlet</servlet-name>
+    <servlet-class>servlet.ToSendCompensationServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>SendCompensationServlet</servlet-name>
+    <servlet-class>servlet.SendCompensationServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ShowCompensationTeaServlet</servlet-name>
+    <servlet-class>servlet.ShowCompensationTeaServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DeleteCommentServlet</servlet-name>
+    <servlet-class>servlet.DeleteCommentServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ShowCommentToAllTeaServlet</servlet-name>
+    <servlet-class>servlet.ShowCommentToAllTeaServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ToPayCompensationServlet</servlet-name>
+    <servlet-class>servlet.ToPayCompensationServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>PayCompensationServlet</servlet-name>
+    <servlet-class>servlet.PayCompensationServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DeleteTeaServlet</servlet-name>
+    <servlet-class>servlet.DeleteTeaServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DeleteManServlet</servlet-name>
+    <servlet-class>servlet.DeleteManServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ShowLabPictureServlet</servlet-name>
+    <servlet-class>servlet.ShowLabPictureServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>SelectRemindServlet</servlet-name>
+    <servlet-class>servlet.SelectRemindServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>SelectUserServlet</servlet-name>
+    <servlet-class>servlet.SelectUserServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>SelectTeaLabServlet</servlet-name>
+    <servlet-class>servlet.SelectTeaLabServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>SelectTeaApplyfServlet</servlet-name>
+    <servlet-class>servlet.SelectTeaApplyfServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>SelectTeaFinishLabServlet</servlet-name>
+    <servlet-class>servlet.SelectTeaFinishLabServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>SelectTeaCommentServlet</servlet-name>
+    <servlet-class>servlet.SelectTeaCommentServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>SelectTeaNoteResultServlet</servlet-name>
+    <servlet-class>servlet.SelectTeaNoteResultServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>SelectTeaCompensationServlet</servlet-name>
+    <servlet-class>servlet.SelectTeaCompensationServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>SelectManLabServlet</servlet-name>
+    <servlet-class>servlet.SelectManLabServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>SelectManNoteServlet</servlet-name>
+    <servlet-class>servlet.SelectManNoteServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>SelectManNoteResultServlet</servlet-name>
+    <servlet-class>servlet.SelectManNoteResultServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>SelectManCompensationServlet</servlet-name>
+    <servlet-class>servlet.SelectManCompensationServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>SelectLeaVerifyApplyServlet</servlet-name>
+    <servlet-class>servlet.SelectLeaVerifyApplyServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>SelectLeaVerifyResultServlet</servlet-name>
+    <servlet-class>servlet.SelectLeaVerifyResultServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>SelectLeaTeacherServlet</servlet-name>
+    <servlet-class>servlet.SelectLeaTeacherServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>SelectLeaManagerServlet</servlet-name>
+    <servlet-class>servlet.SelectLeaManagerServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ManCountTotalServlet</servlet-name>
+    <servlet-class>servlet.ManCountTotalServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ShowTeaFinishCompensationServlet</servlet-name>
+    <servlet-class>servlet.ShowTeaFinishCompensationServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>SelectTeaFinishCompensationServlet</servlet-name>
+    <servlet-class>servlet.SelectTeaFinishCompensationServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ShowManFinishNoteServlet</servlet-name>
+    <servlet-class>servlet.ShowManFinishNoteServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>SelectManFinishNoteServlet</servlet-name>
+    <servlet-class>servlet.SelectManFinishNoteServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ShowTeaLabPictureServlet</servlet-name>
+    <servlet-class>servlet.ShowTeaLabPictureServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ShowManToSendCompensationServlet</servlet-name>
+    <servlet-class>servlet.ShowManToSendCompensationServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ShowManNoteFinishPictureServlet</servlet-name>
+    <servlet-class>servlet.ShowManNoteFinishPictureServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ShowManAllCompensationServlet</servlet-name>
+    <servlet-class>servlet.ShowManAllCompensationServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ShowLabCommentPictureToOtherTeacherServlet</servlet-name>
+    <servlet-class>servlet.ShowLabCommentPictureToOtherTeacherServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ShowTeaCommentServlet</servlet-name>
+    <servlet-class>servlet.ShowTeaCommentServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ShowTeaCommentPictureServlet</servlet-name>
+    <servlet-class>servlet.ShowTeaCommentPictureServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ShowTeaNoteResultPictureServlet</servlet-name>
+    <servlet-class>servlet.ShowTeaNoteResultPictureServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ShowTeaCompensationPictureServlet</servlet-name>
+    <servlet-class>servlet.ShowTeaCompensationPictureServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ShowManToGradeCreditServlet</servlet-name>
+    <servlet-class>servlet.ShowManToGradeCreditServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ManToGradeCreditServlet</servlet-name>
+    <servlet-class>servlet.ManToGradeCreditServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ManGradeCreditServlet</servlet-name>
+    <servlet-class>servlet.ManGradeCreditServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>LeaShowTeacherCreditServlet</servlet-name>
+    <servlet-class>servlet.LeaShowTeacherCreditServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ShowTeaFinishCompensationPictureServlet</servlet-name>
+    <servlet-class>servlet.ShowTeaFinishCompensationPictureServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ShowManTeaCreditServlet</servlet-name>
+    <servlet-class>servlet.ShowManTeaCreditServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ShowManTeaCreditPictureServlet</servlet-name>
+    <servlet-class>servlet.ShowManTeaCreditPictureServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>LeaCountTotalServlet</servlet-name>
+    <servlet-class>servlet.LeaCountTotalServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>SelectManToGradeCreditServlet</servlet-name>
+    <servlet-class>servlet.SelectManToGradeCreditServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>SelectManFinishCreditServlet</servlet-name>
+    <servlet-class>servlet.SelectManFinishCreditServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ShowLeaVerifyResultServlet</servlet-name>
+    <servlet-class>servlet.ShowLeaVerifyResultServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ShowManLabNumberServlet</servlet-name>
+    <servlet-class>servlet.ShowManLabNumberServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>LabAddServlet</servlet-name>
+    <servlet-class>servlet.LabAddServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AdministratorShowLabsServlet</servlet-name>
+    <servlet-class>servlet.AdministratorShowLabsServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>SelectAdministratorLabsServlet</servlet-name>
+    <servlet-class>servlet.SelectAdministratorLabsServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>TeaSendRemindVerifyServlet</servlet-name>
+    <servlet-class>servlet.TeaSendRemindVerifyServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>IdeServlet</servlet-name>
+    <servlet-class>servlet.IdeServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>PhoneServlet</servlet-name>
+    <servlet-class>servlet.PhoneServlet</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+  <servlet-mapping>
+    <servlet-name>RemindServlet</servlet-name>
+    <url-pattern>/RemindServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdateRemindServlet</servlet-name>
+    <url-pattern>/UpdateRemindServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ShowRemindServlet</servlet-name>
+    <url-pattern>/ShowRemindServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ShowLabServlet</servlet-name>
+    <url-pattern>/ShowLabServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdateLabServlet</servlet-name>
+    <url-pattern>/UpdateLabServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AlterLabServlet</servlet-name>
+    <url-pattern>/AlterLabServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LabServlet</servlet-name>
+    <url-pattern>/LabServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteLabServlet</servlet-name>
+    <url-pattern>/DeleteLabServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AlterRemindServlet</servlet-name>
+    <url-pattern>/AlterRemindServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ApplyLabServletOne</servlet-name>
+    <url-pattern>/ApplyLabServletOne</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ShowTeaLabServlet</servlet-name>
+    <url-pattern>/ShowTeaLabServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ApplyLabServletTwo</servlet-name>
+    <url-pattern>/ApplyLabServletTwo</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RegisterServlet</servlet-name>
+    <url-pattern>/RegisterServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ResetPasswordServlet</servlet-name>
+    <url-pattern>/ResetPasswordServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ShowAdministratorServlet</servlet-name>
+    <url-pattern>/ShowAdministratorServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ShowTeacherServlet</servlet-name>
+    <url-pattern>/ShowTeacherServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ShowManageServlet</servlet-name>
+    <url-pattern>/ShowManageServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ShowLeaderServlet</servlet-name>
+    <url-pattern>/ShowLeaderServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ShowTeachersLServlet</servlet-name>
+    <url-pattern>/ShowTeachersLServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ShowManagesLServlet</servlet-name>
+    <url-pattern>/ShowManagesLServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ShowUserServlet</servlet-name>
+    <url-pattern>/ShowUserServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AlterAdministratorButtonServlet</servlet-name>
+    <url-pattern>/AlterAdministratorButtonServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AlterAdministratorServlet</servlet-name>
+    <url-pattern>/AlterAdministratorServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>TeacherCancelApplyServlet</servlet-name>
+    <url-pattern>/TeacherCancelApplyServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AlterTeacherButtonServlet</servlet-name>
+    <url-pattern>/AlterTeacherButtonServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AlterTeacherServlet</servlet-name>
+    <url-pattern>/AlterTeacherServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AlterManagerServlet</servlet-name>
+    <url-pattern>/AlterManagerServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>AlterLeaderButtonServlet</servlet-name>
+    <url-pattern>/AlterLeaderButtonServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AlterManagerButtonServlet</servlet-name>
+    <url-pattern>/AlterManagerButtonServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AlterLeaderServlet</servlet-name>
+    <url-pattern>/AlterLeaderServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>VerifyApplyServlet</servlet-name>
+    <url-pattern>/VerifyApplyServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ToVerifyServlet</servlet-name>
+    <url-pattern>/ToVerifyServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>VerifyResultServlet</servlet-name>
+    <url-pattern>/VerifyResultServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>MonitorServlet</servlet-name>
+    <url-pattern>/MonitorServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ToNoteServlet</servlet-name>
+    <url-pattern>/ToNoteServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ShowNoteSutiation</servlet-name>
+    <url-pattern>/ShowNoteSutiation</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>NoteResultServlet</servlet-name>
+    <url-pattern>/NoteResultServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>TeaNoteSituationServlet</servlet-name>
+    <url-pattern>/TeaNoteSituationServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ShowTeaFinishLabServlet</servlet-name>
+    <url-pattern>/ShowTeaFinishLabServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ToCommentServlet</servlet-name>
+    <url-pattern>/ToCommentServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CommentLabServlet</servlet-name>
+    <url-pattern>/CommentLabServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ToSendCompensationServlet</servlet-name>
+    <url-pattern>/ToSendCompensationServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SendCompensationServlet</servlet-name>
+    <url-pattern>/SendCompensationServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ShowCompensationTeaServlet</servlet-name>
+    <url-pattern>/ShowCompensationTeaServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteCommentServlet</servlet-name>
+    <url-pattern>/DeleteCommentServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ShowCommentToAllTeaServlet</servlet-name>
+    <url-pattern>/ShowCommentToAllTeaServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ToPayCompensationServlet</servlet-name>
+    <url-pattern>/ToPayCompensationServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PayCompensationServlet</servlet-name>
+    <url-pattern>/PayCompensationServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteTeaServlet</servlet-name>
+    <url-pattern>/DeleteTeaServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteManServlet</servlet-name>
+    <url-pattern>/DeleteManServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ShowLabPictureServlet</servlet-name>
+    <url-pattern>/ShowLabPictureServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SelectRemindServlet</servlet-name>
+    <url-pattern>/SelectRemindServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SelectUserServlet</servlet-name>
+    <url-pattern>/SelectUserServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SelectTeaLabServlet</servlet-name>
+    <url-pattern>/SelectTeaLabServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SelectTeaApplyfServlet</servlet-name>
+    <url-pattern>/SelectTeaApplyfServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SelectTeaFinishLabServlet</servlet-name>
+    <url-pattern>/SelectTeaFinishLabServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SelectTeaCommentServlet</servlet-name>
+    <url-pattern>/SelectTeaCommentServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SelectTeaNoteResultServlet</servlet-name>
+    <url-pattern>/SelectTeaNoteResultServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SelectTeaCompensationServlet</servlet-name>
+    <url-pattern>/SelectTeaCompensationServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SelectManLabServlet</servlet-name>
+    <url-pattern>/SelectManLabServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SelectManNoteServlet</servlet-name>
+    <url-pattern>/SelectManNoteServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SelectManNoteResultServlet</servlet-name>
+    <url-pattern>/SelectManNoteResultServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SelectManCompensationServlet</servlet-name>
+    <url-pattern>/SelectManCompensationServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SelectLeaVerifyApplyServlet</servlet-name>
+    <url-pattern>/SelectLeaVerifyApplyServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SelectLeaVerifyResultServlet</servlet-name>
+    <url-pattern>/SelectLeaVerifyResultServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SelectLeaTeacherServlet</servlet-name>
+    <url-pattern>/SelectLeaTeacherServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SelectLeaManagerServlet</servlet-name>
+    <url-pattern>/SelectLeaManagerServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ManCountTotalServlet</servlet-name>
+    <url-pattern>/ManCountTotalServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ShowTeaFinishCompensationServlet</servlet-name>
+    <url-pattern>/ShowTeaFinishCompensationServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SelectTeaFinishCompensationServlet</servlet-name>
+    <url-pattern>/SelectTeaFinishCompensationServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ShowManFinishNoteServlet</servlet-name>
+    <url-pattern>/ShowManFinishNoteServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SelectManFinishNoteServlet</servlet-name>
+    <url-pattern>/SelectManFinishNoteServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ShowTeaLabPictureServlet</servlet-name>
+    <url-pattern>/ShowTeaLabPictureServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ShowManToSendCompensationServlet</servlet-name>
+    <url-pattern>/ShowManToSendCompensationServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ShowManNoteFinishPictureServlet</servlet-name>
+    <url-pattern>/ShowManNoteFinishPictureServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ShowManAllCompensationServlet</servlet-name>
+    <url-pattern>/ShowManAllCompensationServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ShowLabCommentPictureToOtherTeacherServlet</servlet-name>
+    <url-pattern>/ShowLabCommentPictureToOtherTeacherServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ShowTeaCommentServlet</servlet-name>
+    <url-pattern>/ShowTeaCommentServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ShowTeaCommentPictureServlet</servlet-name>
+    <url-pattern>/ShowTeaCommentPictureServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ShowTeaNoteResultPictureServlet</servlet-name>
+    <url-pattern>/ShowTeaNoteResultPictureServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ShowTeaCompensationPictureServlet</servlet-name>
+    <url-pattern>/ShowTeaCompensationPictureServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ShowManToGradeCreditServlet</servlet-name>
+    <url-pattern>/ShowManToGradeCreditServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ManToGradeCreditServlet</servlet-name>
+    <url-pattern>/ManToGradeCreditServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ManGradeCreditServlet</servlet-name>
+    <url-pattern>/ManGradeCreditServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LeaShowTeacherCreditServlet</servlet-name>
+    <url-pattern>/LeaShowTeacherCreditServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ShowTeaFinishCompensationPictureServlet</servlet-name>
+    <url-pattern>/ShowTeaFinishCompensationPictureServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ShowManTeaCreditServlet</servlet-name>
+    <url-pattern>/ShowManTeaCreditServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ShowManTeaCreditPictureServlet</servlet-name>
+    <url-pattern>/ShowManTeaCreditPictureServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LeaCountTotalServlet</servlet-name>
+    <url-pattern>/LeaCountTotalServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SelectManToGradeCreditServlet</servlet-name>
+    <url-pattern>/SelectManToGradeCreditServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SelectManFinishCreditServlet</servlet-name>
+    <url-pattern>/SelectManFinishCreditServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ShowLeaVerifyResultServlet</servlet-name>
+    <url-pattern>/ShowLeaVerifyResultServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ShowManLabNumberServlet</servlet-name>
+    <url-pattern>/ShowManLabNumberServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LabAddServlet</servlet-name>
+    <url-pattern>/LabAddServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AdministratorShowLabsServlet</servlet-name>
+    <url-pattern>/AdministratorShowLabsServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SelectAdministratorLabsServlet</servlet-name>
+    <url-pattern>/SelectAdministratorLabsServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>TeaSendRemindVerifyServlet</servlet-name>
+    <url-pattern>/TeaSendRemindVerifyServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>IdeServlet</servlet-name>
+    <url-pattern>/IdeServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PhoneServlet</servlet-name>
+    <url-pattern>/PhoneServlet</url-pattern>
+  </servlet-mapping>
+
+
+
+ 
+
+ 
+</web-app>
